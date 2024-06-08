@@ -1,0 +1,36 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.block-list {
+  list-style: none;
+  padding: 0;
+}
+
+.block-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.block-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.block-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-height {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.block-timestamp {
+  color: #888;
+  font-size: 14px;
+}
