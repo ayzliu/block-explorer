@@ -1,0 +1,30 @@
+.block-height {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.block-height table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.block-height th,
+.block-height td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.block-height th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+.block-height tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.block-height tbody tr:hover {
+  background-color: #f1f1f1;
+}
