@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
-import '/Users/liuyanzi/block-explorer/frontend/src/BitcoinPriceChart.css';
+import '../BitcoinPriceChart.css';
 import { Line } from 'react-chartjs-2';
+
 import {
   Chart as ChartJS,
   CategoryScale,
