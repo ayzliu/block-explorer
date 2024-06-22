@@ -1,10 +1,8 @@
 import useWebSocket from '../hooks/useWebSocket';
 import '/Users/liuyanzi/block-explorer/frontend/src/BlockHeight.css';
 
-interface BlockData {
-  height: number;
-  timestamp: number;
-}
+
+
 
 const BlockHeight = () => {
   const data = useWebSocket('ws://127.0.0.1:8080');
