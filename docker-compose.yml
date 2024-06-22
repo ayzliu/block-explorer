@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: block
+      POSTGRES_DB: block_explorer
+    ports:
+      - "5432:5432"
+
+  server:
+    build: ./server
+    environment:
+      DATABASE_URL: postgres://postgres:block@postgres:5432/block_explorer
+    depends_on:
+      - postgres
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - server
