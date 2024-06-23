@@ -15,3 +15,6 @@ tokio-tungstenite = "*"
 futures-util = "0.3"
 
 
+[[bin]]
+name = "your_server_binary"
+path = "src/main.rs"
