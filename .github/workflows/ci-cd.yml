@@ -19,10 +19,10 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: block
           POSTGRES_DB: block_explorer
-        ports: ['5432:5432']
+        ports: ['5433:5432']  # Match the updated port mapping in docker-compose.yml
 
     env:
-      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DATABASE_URL: postgres://postgres:block@localhost:5433/block_explorer  # Match the updated host port
 
     steps:
     - name: Checkout code
