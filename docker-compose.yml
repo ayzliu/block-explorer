@@ -8,7 +8,7 @@ services:
       POSTGRES_PASSWORD: block
       POSTGRES_DB: block_explorer
     ports:
-      - "5434:5432"
+      - "5435:5432"
 
   server:
     build: ./server
